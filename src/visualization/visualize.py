@@ -120,8 +120,7 @@ def post_plot_1(df_new: pd.DataFrame) -> None:
     for i in range(len(df_new)):
         ax[0].text(df_new.iloc[i]['x_mm'] + 30,
                    df_new.iloc[i]['y_mm'],
-                   f"pitch: {df_new.iloc[i]['pitch_deg']}, \
-                       roll: {df_new.iloc[i]['roll_deg']}", fontsize=7)
+                   f"pitch: {df_new.iloc[i]['pitch_deg']}, roll: {df_new.iloc[i]['roll_deg']}", fontsize=7)
 
     ax[0].set_xlim([6250, 10200])
     ax[0].set_ylim([-35700, -31750])
